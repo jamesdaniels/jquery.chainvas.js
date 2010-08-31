@@ -1,0 +1,16 @@
+jQuery Chainvas - Chainable Canvas
+by James Daniels <james@jamesdaniels.net>
+
+A quick little dirty helper to let you do things like:
+
+$('#tutorial').getContext('2d')
+  .clearRect(0,0,600,600)
+  .save()
+    .beginPath()
+    .moveTo(200,200)
+    .lineTo(0,0)
+    .lineWidth(5)
+    .stroke()
+  .restore();
+
+TODO: Make it less hackish and check it out on IE
